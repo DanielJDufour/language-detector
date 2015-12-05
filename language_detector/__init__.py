@@ -1,5 +1,8 @@
+from os.path import dirname, realpath
+directory = dirname(realpath(__file__))
+
 language_chars = {}
-with open("prep/language_chars.txt") as f:
+with open(directory + "/prep/language_chars.txt") as f:
     for line in f:
         if line:
             items = line.strip().split("\t")
