@@ -14,7 +14,7 @@ def detect_language(text):
     if isinstance(text, str):
         text = text.decode("utf-8")
     for char in text:
-        for i in range(3):
+        for i in range(5):
             for language, chars in language_chars.iteritems():
                 char_to_compare = chars[i]
                 if char == chars[i]:
