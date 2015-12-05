@@ -19,7 +19,7 @@ language = detect_language(text)
 | Arabic |
 | Farsi |
 | French |
-| Kurmanci (Kurdish |
+| Kurmanci (Kurdish) |
 | Sorani (Kurdish) |
 | Spanish|
 | Turkish |
