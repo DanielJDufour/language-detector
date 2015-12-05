@@ -1,0 +1,19 @@
+language_chars = {}
+with open("prep/language_chars.txt") as f:
+    for line in f:
+        if line:
+            items = line.strip().split("\t")
+            language = items[0]
+            if language:
+                language_chars[language] = [char.decode("utf-8") for char in items[1:] if char]
+
+def detect_language(text):
+    if isinstance(text, str):
+        text = text.decode("utf-8")
+    for char in text:
+        for i in range(3):
+            for language, chars in language_chars.iteritems():
+                char_to_compare = chars[i]
+                if char == chars[i]:
+                    return language
+dl = detect_language

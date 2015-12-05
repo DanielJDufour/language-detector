@@ -1,0 +1,9 @@
+
+Turkish		ı	İ	ğ	ö	ü	ç	Ç	Ş	®	ş	_	’	?	z	'	K	R	Q	I	Y	k	$	D	B	y	l	G	L	6	A
+Kurmanci		“	Û	û	…	”	Ê	Î	ê	î	!	ş	X	–	|	Ş	Ç	x	k	Q	ç	H	z	D	K	j	W	(	)	b	v
+Spanish		ú	Á	á	ñ	ó	í	¿	q	%	E	j	Z	L	Q	c	U	F	?	,	o	a	$	I	u	C	d	s	p	G	.
+English		@	h	J	O	f	w	&	V	7	t	U	S	W	T	2	g	0	o	-	_	c	y	s	p	1	8	M	C	6	'
+Farsi		۴	۱	۵	۲	۶	آ	ز	‌	ک	ه	–	ص	ظ	ی	ذ	چ	ف	د	،	خ	س	ش	ر	ب	ا	ج	گ	ن	ع	پ
+Arabic		ؤ	ـ	أ	ث	ء	إ	ة	ي	ى	ض	ط	غ	ل	ق	ع	ذ	ج	ح	ف	ظ	ص	®	م	ا	/	ب	ت	س	ك	ن
+French		à	À	è	’	é	X	:	"	-	L	q	5	)	(	u	6	'	0	©	4	W	B	G	s	N	p	A	2	C	x
+Sorani		٠	ڤ	ڕ	ڵ	١	٢	ۆ	ێ	ە	ژ	ئ	پ	ك	گ	چ	ی	و	|	؟	ک	ت	‌	ش	ن	ر	د	،	س	خ	ب
