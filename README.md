@@ -23,3 +23,9 @@ language = detect_language(text)
 | Sorani (Kurdish) |
 | Spanish|
 | Turkish |
+
+# Testing
+To test the package run
+```
+python -m unittest language_detector.tests.test
+```

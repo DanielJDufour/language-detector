@@ -13,10 +13,13 @@ with open(directory + "/prep/language_chars.txt") as f:
 def detect_language(text):
     if isinstance(text, str):
         text = text.decode("utf-8")
-    for char in text:
-        for i in range(5):
-            for language, chars in language_chars.iteritems():
-                char_to_compare = chars[i]
-                if char == chars[i]:
-                    return language
+
+    for n in range(1,5):
+        number_of_uniques = n * 3
+        for char in text:
+            for i in range(number_of_uniques):
+                for language, chars in language_chars.iteritems():
+                    char_to_compare = chars[i]
+                    if char == chars[i]:
+                        return language
 dl = detect_language
