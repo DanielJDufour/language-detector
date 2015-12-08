@@ -15,7 +15,7 @@ def detect_language(text):
         text = text.decode("utf-8")
 
     for n in range(1,5):
-        number_of_uniques = n * 3
+        number_of_uniques = n * 5
         for char in text:
             for i in range(number_of_uniques):
                 for language, chars in language_chars.iteritems():

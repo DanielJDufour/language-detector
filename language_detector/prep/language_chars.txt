@@ -1,9 +1,10 @@
-
-Turkish		ı	İ	ğ	ö	ü	ç	Ç	Ş	®	ş	_	’	?	z	'	K	R	Q	I	Y	k	$	D	B	y	l	G	L	6	A
-Kurmanci		“	Û	û	…	”	Ê	Î	ê	î	!	ş	X	–	|	Ş	Ç	x	k	Q	ç	H	z	D	K	j	W	(	)	b	v
-Spanish		ú	Á	á	ñ	ó	í	¿	q	%	E	j	Z	L	Q	c	U	F	?	,	o	a	$	I	u	C	d	s	p	G	.
-English		@	h	J	O	f	w	&	V	7	t	U	S	W	T	2	g	0	o	-	_	c	y	s	p	1	8	M	C	6	'
-Farsi		۴	۱	۵	۲	۶	آ	ز	‌	ک	ه	–	ص	ظ	ی	ذ	چ	ف	د	،	خ	س	ش	ر	ب	ا	ج	گ	ن	ع	پ
-Arabic		ؤ	ـ	أ	ث	ء	إ	ة	ي	ى	ض	ط	غ	ل	ق	ع	ذ	ج	ح	ف	ظ	ص	®	م	ا	/	ب	ت	س	ك	ن
-French		à	À	è	’	é	X	:	"	-	L	q	5	)	(	u	6	'	0	©	4	W	B	G	s	N	p	A	2	C	x
-Sorani		٠	ڤ	ڕ	ڵ	١	٢	ۆ	ێ	ە	ژ	ئ	پ	ك	گ	چ	ی	و	|	؟	ک	ت	‌	ش	ن	ر	د	،	س	خ	ب
+Turkish		ı	İ	ğ	ö	ü	ç	Ç	Ş	®	ş	’	$	k	z	Y	6	K	D	&	I	y	©	R	9	l	B	+	/	Q	A
+Kurmanci		Û	û	Ê	ê	î	ş	X	–	|	Ş	Ç	ç	k	x	H	W	j	D	z	y	w	v	b	K	%	Q	(	)	Î	m
+Russian		С	Ю	п	с	у	х	щ	ь	Ч	Р	Б	А	Г	В	Е	Д	З	Й	И	Н	М	П	О	У	Т	Х	Ф	а	Э	Я
+Spanish		Á	ó	ñ	ú	á	í	¿	%	q	E	j	c	L	U	F	Z	a	$	o	I	C	s	d	Q	.	p	u	G	l	M
+Mandarin		宁	内	萄	旺	合	伊	希	成	牙	那	索	伦	萨	洪	肯	莱	纳	非	所	厄	腊	反	乌	苏	济	塔	叙	托	博	保
+English		@	h	f	&	w	7	O	W	t	2	V	J	S	U	0	T	8	y	1	o	g	c	6	s	p	Y	n	F	e	C
+Farsi		۴	۱	۵	۲	۶	آ	‌	ک	–	ز	ه	ظ	ص	ی	چ	ذ	خ	د	ش	ف	گ	پ	س	ر	ب	ع	؟	3	ا	ت
+Arabic		ؤ	ـ	أ	ث	ء	إ	ة	ي	غ	ى	،	ض	ط	ل	ج	ق	ع	ح	ذ	ف	ص	ظ	م	ا	®	س	ن	ب	و	ك
+French		À	É	à	è	ï	ë	Î	é	’	X	q	-	ô	G	,	u	J	Q	L	N	R	M	Z	z	O	B	:	K	A	C
+Sorani		ۆ	ێ	٠	ڤ	ڕ	ڵ	١	ە	٢	ژ	ئ	پ	گ	چ	ی	ك	|	؟	ک	‌	و	ش	ت	د	خ	ر	ن	ب	س	م
