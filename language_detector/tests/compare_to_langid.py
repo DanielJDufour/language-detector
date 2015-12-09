@@ -16,13 +16,16 @@ print timeit('''
     errors = 0
     for language in languages:
         directory_of_language_files = directory_of_sources + "/" + language
-        for filename in listdir(directory_of_language_files):
+        for filename in listdir(directory_of_language_files)[:3]:
             filepath = directory_of_language_files + "/" + filename 
             with open(filepath) as f:
                 text = f.read().decode("utf-8")
                 number_of_files += 1
-                errors += detect_language(text) != language
-    print "% errors are", float(errors) / number_of_files
+                detected_language = detect_language(text)
+                if detected_language != language:
+                    #print "ERROR: ", detected_language, " should be ", language
+                    errors += 1
+    print "% errors are", (float(errors) / number_of_files) * 100, "%"
 
 ''', number = 10)
 
@@ -45,7 +48,7 @@ print timeit('''
     errors = 0
     for language in languages:
         directory_of_language_files = directory_of_sources + "/" + language
-        for filename in listdir(directory_of_language_files):
+        for filename in listdir(directory_of_language_files)[:3]:
             filepath = directory_of_language_files + "/" + filename 
             with open(filepath) as f:
                 text = f.read().decode("utf-8")

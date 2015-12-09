@@ -12,7 +12,7 @@ d['FR'] = "French"
 d['RU'] = "Russian"
 d['ZH'] = "Mandarin"
 
-filepath = '/tmp/un/uncorpora_nolayout_20090710.tmx'
+filepath = '/tmp/uncorpora_plain_20090831.tmx'
 count = 0
 for event, elem in ElementTree.iterparse(filepath, events=('start', 'end', 'start-ns', 'end-ns')):
     if event == "start":
@@ -29,5 +29,5 @@ for event, elem in ElementTree.iterparse(filepath, events=('start', 'end', 'star
                     f.write(text.encode("utf-8"))
 
     count += 1
-    if count == 2000:
+    if count == 50000:
         break
