@@ -41,5 +41,9 @@ class TestStringMethods(unittest.TestCase):
         """
         self.assertEqual(dl(text), "Turkish")
 
+    def test_english_iterable(self):
+        iterable = ["Washington", "Adams", "Jefferson"]
+        self.assertEqual(dl(iterable), "English")
+
 if __name__ == '__main__':
     unittest.main()
