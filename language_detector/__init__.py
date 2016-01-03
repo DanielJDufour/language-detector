@@ -31,3 +31,6 @@ def detect_language(inpt):
         return detect_language_text(inpt)
     elif isinstance(inpt, set) or isinstance(inpt, list):
         return detect_language_iterable(inpt)
+
+def isEnglish(inpt):
+    return detect_language(inpt) == "English"

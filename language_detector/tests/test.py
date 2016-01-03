@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 import unittest
 from language_detector import detect_language as dl
+from language_detector import *
 
 class TestStringMethods(unittest.TestCase):
 
@@ -44,6 +45,10 @@ class TestStringMethods(unittest.TestCase):
     def test_english_iterable(self):
         iterable = ["Washington", "Adams", "Jefferson"]
         self.assertEqual(dl(iterable), "English")
+
+    def test_is_english(self):
+        text = "Bla bla bla I'm not sure where to start."
+        self.assertEqual(isEnglish(text), True)
 
 if __name__ == '__main__':
     unittest.main()
