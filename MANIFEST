@@ -3,3 +3,4 @@ README.txt
 setup.cfg
 setup.py
 language_detector/__init__.py
+language_detector/prep/char_language.txt
