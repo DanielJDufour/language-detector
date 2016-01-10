@@ -1,2 +1,0 @@
-include language_detector/prep/char_language.txt
-include language_detector/tests/test.py
