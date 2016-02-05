@@ -3,7 +3,9 @@ from distutils.core import setup
 setup(
   name = 'language-detector',
   packages = ['language_detector'],
-  version = '2.5',
+  package_dir = {'language_detector': 'language_detector'},
+  package_data = {'language_detector': ['prep/char_language.txt','tests/__init__.py','tests/test.py']},
+  version = '2.8',
   description = 'Detect language of text',
   author = 'Daniel J. Dufour',
   author_email = 'daniel.j.dufour@gmail.com',
