@@ -24,6 +24,12 @@ class TestStringMethods(unittest.TestCase):
         """
         self.assertEqual(dl(text), "English")
 
+    def test_german(self):
+        text = """
+        "Die unendliche Geschichte" fasziniert Leser, Hörer und Zuschauer seit fast vierzig Jahren. Eine Kinderjury zeichnete nun die klangvolle Neuvertonung des Klassikers als bestes Kinderhörspiel aus.
+        """
+        self.assertEqual(dl(text), "German")
+
     def test_kurmanci(self):
         text = """
         Luv xelata xwe pêşkêşî 55 milyon kurd û pêşmergeyan kir Zêdetir

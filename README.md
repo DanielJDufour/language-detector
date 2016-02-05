@@ -11,6 +11,7 @@ pip install language-detector
 from language_detector import detect_language
 text = "I arrived in that city on January 4, 1937"
 language = detect_language(text)
+# prints English
 ```
 
 # Features
@@ -19,6 +20,7 @@ language = detect_language(text)
 | Arabic |
 | Farsi |
 | French |
+| German |
 | Kurmanci (Kurdish) |
 | Sorani (Kurdish) |
 | Spanish|
@@ -31,7 +33,16 @@ python -m unittest language_detector.tests.test
 ```
 
 # Comparison
-|package|language-detector|langid|
-|--------------------------------|
-|test-duration|0.0320|2.4251|
-|accuracy|63.3%|70.0%|
+| package | language-detector | langid |
+| -------------------------------- |
+| test-duration | 0.0320 | 2.4251 |
+| accuracy | 63.3% | 70.0% |
+
+# Excluding Languages
+If you don't want language-detector to look for certain languages, you can monkey-patch the code.  For example, in order to exclude English:
+```
+import language_detector
+language_detector.char_language = [cl for cl in char_language if cl[1] != "English"]
+
+# proceed as normal
+``` 

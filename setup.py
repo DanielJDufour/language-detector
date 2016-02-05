@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'language-detector',
   packages = ['language_detector'],
-  version = '2.3',
+  version = '2.4',
   description = 'Detect language of text',
   author = 'Daniel J. Dufour',
   author_email = 'daniel.j.dufour@gmail.com',

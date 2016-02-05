@@ -5,7 +5,7 @@ from os import listdir
 import os
 
 # unfortunately, because have a small source base for Kurmanci, need to make sure doesn't used punctuation
-excludes = [u":", u"“", u"…", u"”", u"?", u"'", u'"', u"_", u"!", u"\n", u"(", u")", u"/", u"\\", u"$", u"&", u",", u"-", u"+", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] + range(10) + [u"ـ", u"٠", u"@", u";", u"’", u"%", u"®", u"©"] + [unichr(1632+n) for n in range(10)] + [unichr(1632+n).encode("utf-8") for n in range(10)]
+excludes = [u":", u"“", u"…", u"”", u"?", u"'", u'"', u"_", u"!", u"\n", u"(", u")", u"/", u"\\", u"$", u"&", u",", u"-", u"+", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] + range(10) + [u"ـ", u"٠", u"@", u";", u"’", u"%", u"®", u"©"] + [unichr(1632+n) for n in range(10)] + [unichr(1632+n).encode("utf-8") for n in range(10)] + ["h", "J"]
 
 
 directory = dirname(realpath(__file__))
