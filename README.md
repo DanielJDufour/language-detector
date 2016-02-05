@@ -34,7 +34,7 @@ python -m unittest language_detector.tests.test
 
 # Comparison
 | package | language-detector | langid |
-| -------------------------------- |
+| --------- | ------------ | ----------- |
 | test-duration | 0.0320 | 2.4251 |
 | accuracy | 63.3% | 70.0% |
 
