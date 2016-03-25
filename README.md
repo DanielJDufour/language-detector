@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DanielJDufour/language-detector.svg?branch=master)](https://travis-ci.org/DanielJDufour/language-detector)
+
 # language-detector
 language-detector detects the language of text
 
