@@ -22,9 +22,13 @@ def detect_language_text(text):
 def detect_language_iterable(iterable):
     # may be able to speed this up with out using counter
     # hmmm nvm.. it's so freaking quick anyway, that probably don't worry about this now
-    counter = Counter([detect_language(iteration) for iteration in iterable])
-    most_common_language = counter.most_common(1)[0][0] or counter.most_common(2)[1][0]
-    return most_common_language
+    most_common = Counter([detect_language(iteration) for iteration in iterable]).most_common(2)
+    if most_common[0][0]:
+        return most_common[0][0]
+    elif len(most_common) == 2:
+        # know that not returning 1st one
+        return most_common[1][0]
+    # will return None if doesn't match any above
 
 def detect_language(inpt):
     if isinstance(inpt, str) or isinstance(inpt, unicode):
