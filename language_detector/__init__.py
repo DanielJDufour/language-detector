@@ -3,6 +3,23 @@ from collections import Counter
 
 directory = dirname(realpath(__file__))
 
+language_to_code = {
+"Arabic": "ar",
+"English": "en",
+"French": "fr",
+"German": "de",
+"Kurdish": "ku",
+"Kurmanci": "ku-ku",
+"Italian": "it",
+"Portuguese": "pt",
+"Sorani": "ku-so",
+"Spanish": "es",
+"Turkish": "tr",
+"Vietnamese": "vi",
+"Welsh": "cy"
+}
+
+
 char_language = []
 with open(directory + "/prep/char_language.txt") as f:
     for line in f:
@@ -15,6 +32,7 @@ def detect_language_text(text):
 
     for char, language in char_language:
         if char in text:
+            #print "MATCHED", [char]
             return language
 
 # just returns the most common language of an iterable of string values
@@ -26,11 +44,19 @@ def detect_language_iterable(iterable):
     most_common_language = counter.most_common(1)[0][0] or counter.most_common(2)[1][0]
     return most_common_language
 
-def detect_language(inpt):
+def detect_language(inpt, return_as_code=False):
     if isinstance(inpt, str) or isinstance(inpt, unicode):
-        return detect_language_text(inpt)
+        language = detect_language_text(inpt)
     elif isinstance(inpt, set) or isinstance(inpt, list):
-        return detect_language_iterable(inpt)
+        language = detect_language_iterable(inpt)
+    if return_as_code:
+        return language_to_code[language]
+    else:
+        return language
+
+
+def isArabic(inpt):
+    return detect_language(inpt) == "Arabic"
 
 def isEnglish(inpt):
     return detect_language(inpt) == "English"

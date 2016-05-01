@@ -40,7 +40,7 @@ for char, count in Counter(all_text).iteritems():
 
 text_to_write = ""
 all_char_score = []
-number = 5
+number = 10
 for language in languages:
 
     language_char_score = []

@@ -56,5 +56,9 @@ class TestStringMethods(unittest.TestCase):
         text = "Bla bla bla I'm not sure where to start."
         self.assertEqual(isEnglish(text), True)
 
+    def test_return_as_code(self):
+        text = "Bla bla bla I'm not sure where to start."
+        self.assertEqual(dl(text, return_as_code=True), "en")
+
 if __name__ == '__main__':
     unittest.main()
