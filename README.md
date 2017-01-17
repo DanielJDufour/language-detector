@@ -36,9 +36,10 @@ python -m unittest language_detector.tests.test
 
 # Comparison
 | package | language-detector | langid |
-| -------------------------------- |
-| test-duration (seconds) | 0.08 | 2.51 |
+| ------- | ----------------- | ------ |
+| test-duration (in seconds)| 0.08 | 2.51 |
 | accuracy | 93.55% | 67.74% |
+
 
 # Excluding Languages
 If you don't want language-detector to look for certain languages, you can monkey-patch the code.  For example, in order to exclude English:
