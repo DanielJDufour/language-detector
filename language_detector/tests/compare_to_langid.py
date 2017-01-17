@@ -25,7 +25,7 @@ print timeit('''
                 if detected_language != language:
                     #print "ERROR: ", detected_language, " should be ", language
                     errors += 1
-    print "% errors are", (float(errors) / number_of_files) * 100, "%"
+    print "accuracy for language_detector:", (1 - (float(errors) / number_of_files)) * 100, "%"
 
 ''', number = 10)
 
@@ -58,6 +58,6 @@ print timeit('''
                     pass
                 else:
                     errors += 1
-    print "% errors are", float(errors) / number_of_files
+    print "accuracy for langid:", (1 - (float(errors) / number_of_files)) * 100, "%"
 
 ''', number = 10)

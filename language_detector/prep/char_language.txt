@@ -1,110 +1,110 @@
-ц	Russian
-б	Russian
-а	Russian
-г	Russian
-в	Russian
-ж	Russian
-е	Russian
-л	Russian
-м	Russian
-п	Russian
-作	Mandarin
-员	Mandarin
-年	Mandarin
-国	Mandarin
-权	Mandarin
-要	Mandarin
-一	Mandarin
-沃	Mandarin
-各	Mandarin
-间	Mandarin
-ß	German
-ä	German
-À	French
-É	French
-à	French
-è	French
-ؤ	Arabic
-أ	Arabic
-إ	Arabic
-ّ	Arabic
-ة	Arabic
-ء	Arabic
-ي	Arabic
-é	French
-ث	Arabic
-ى	Arabic
-ı	Turkish
-İ	Turkish
-ğ	Turkish
-ل	Arabic
-ö	German
-Û	Kurmanci
-Ê	Kurmanci
-û	Kurmanci
-Î	Kurmanci
-ê	Kurmanci
-î	Kurmanci
-ڤ	Sorani
-ۆ	Sorani
-ێ	Sorani
-ڕ	Sorani
-ڵ	Sorani
-ە	Sorani
-ü	Turkish
-ö	Turkish
-ú	Spanish
-Á	Spanish
-ñ	Spanish
-ó	Spanish
-ژ	Sorani
-á	Spanish
-í	Spanish
-–	Kurmanci
-۳	Farsi
-۷	Farsi
-۰	Farsi
-۴	Farsi
-۵	Farsi
-۹	Farsi
-۲	Farsi
-۶	Farsi
-۱	Farsi
-آ	Farsi
-ئ	Sorani
-¿	Spanish
-X	Kurmanci
-ك	Sorani
-Ş	Kurmanci
-X	French
-ç	Turkish
-Ç	Kurmanci
-q	Spanish
-ş	Turkish
-K	German
-‌	Sorani
-ü	German
-G	German
-f	English
-z	Turkish
-Y	Turkish
-D	German
-U	Spanish
-Z	German
-Q	Turkish
-w	English
-V	German
-U	English
-c	Spanish
-z	German
-O	English
-u	French
-q	French
-V	English
-t	English
-s	French
-p	French
-o	English
-c	English
-S	English
-C	English
+ц	Russian	65.2764705882
+б	Russian	65.2764705882
+а	Russian	65.2764705882
+г	Russian	65.2764705882
+в	Russian	65.2764705882
+ж	Russian	65.2764705882
+е	Russian	65.2764705882
+л	Russian	65.2764705882
+м	Russian	65.2764705882
+п	Russian	65.2764705882
+作	Mandarin	56.8429140581
+员	Mandarin	56.8429140581
+年	Mandarin	56.8429140581
+国	Mandarin	56.8429140581
+权	Mandarin	56.8429140581
+要	Mandarin	56.8429140581
+一	Mandarin	56.8429140581
+沃	Mandarin	56.8429140581
+各	Mandarin	56.8429140581
+间	Mandarin	56.8429140581
+ß	German	42.9007731959
+ä	German	42.9007731959
+À	French	20.3905675786
+É	French	20.3905675786
+à	French	20.3905675786
+è	French	20.3905675786
+ؤ	Arabic	16.0541713551
+أ	Arabic	16.0541713551
+إ	Arabic	16.0541713551
+ّ	Arabic	16.0541713551
+ة	Arabic	16.0541713551
+ء	Arabic	16.0541713551
+ي	Arabic	15.463944467
+é	French	15.4306997892
+ث	Arabic	13.4855039383
+ى	Arabic	10.7027809034
+ı	Turkish	8.34360902256
+İ	Turkish	8.34360902256
+ğ	Turkish	8.34360902256
+ل	Arabic	7.77928976795
+ö	German	7.61142750249
+Û	Kurmanci	7.35117032239
+Ê	Kurmanci	7.35117032239
+û	Kurmanci	7.35117032239
+Î	Kurmanci	7.35117032239
+ê	Kurmanci	7.30826465903
+î	Kurmanci	7.17614245757
+ڤ	Sorani	7.13174807198
+ۆ	Sorani	7.13174807198
+ێ	Sorani	7.13174807198
+ڕ	Sorani	7.13174807198
+ڵ	Sorani	7.13174807198
+ە	Sorani	7.13174807198
+ü	Turkish	6.90298588197
+ö	Turkish	6.86329129275
+ú	Spanish	6.84812122874
+Á	Spanish	6.84812122874
+ñ	Spanish	6.84812122874
+ó	Spanish	6.84812122874
+ژ	Sorani	6.60347043702
+á	Spanish	6.56860607655
+í	Spanish	6.56278284421
+–	Kurmanci	6.30100313348
+۳	Farsi	6.12154459087
+۷	Farsi	6.12154459087
+۰	Farsi	6.12154459087
+۴	Farsi	6.12154459087
+۵	Farsi	6.12154459087
+۹	Farsi	6.12154459087
+۲	Farsi	6.12154459087
+۶	Farsi	6.12154459087
+۱	Farsi	6.12154459087
+آ	Farsi	5.83549110531
+ئ	Sorani	5.6409306784
+¿	Spanish	5.6396292472
+X	Kurmanci	5.51337774179
+ك	Sorani	5.48596005537
+Ş	Kurmanci	5.26833873105
+X	French	5.09764189465
+ç	Turkish	5.07569548872
+Ç	Kurmanci	4.80653444156
+q	Spanish	4.5654141525
+ş	Turkish	4.24311740891
+K	German	4.1854412874
+‌	Sorani	4.06343785497
+ü	German	3.70366387303
+G	German	3.69038909212
+f	English	3.67171438059
+z	Turkish	3.67118796992
+Y	Turkish	3.3992481203
+D	German	3.28426971834
+U	Spanish	3.24384689783
+Z	German	3.17783505155
+Q	Turkish	3.12885338346
+w	English	3.08695778416
+V	German	3.06434094256
+U	English	2.90183878466
+c	Spanish	2.8940463178
+z	German	2.86005154639
+O	English	2.85180708148
+u	French	2.84799402901
+q	French	2.84047707563
+V	English	2.81300698513
+t	English	2.54726760185
+s	French	2.40908533228
+p	French	2.38559596055
+o	English	2.32811296338
+c	English	2.25132713011
+S	English	2.22463758519
+C	English	2.0227380967

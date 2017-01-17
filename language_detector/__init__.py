@@ -24,16 +24,24 @@ char_language = []
 with open(directory + "/prep/char_language.txt") as f:
     for line in f:
         if line:
-            char_language.append(line.decode("utf-8").strip().split(u"\t"))
+            char, language, score = line.decode("utf-8").strip().split(u"\t")
+            score = float(score)
+            char_language.append((char, language, score))
 
 def detect_language_text(text):
     if isinstance(text, str):
         text = text.decode("utf-8")
 
-    for char, language in char_language:
+    # could make this more sophisticated with using TFIDF scores probably
+    counts = Counter()
+    for char, language, score in char_language:
         if char in text:
             #print "MATCHED", [char]
-            return language
+            #return language
+            counts[language] += score
+    #print "counts:", counts
+    # basically return whichever language has most amount of special letters in there
+    return counts.most_common(1)[0][0]
 
 # just returns the most common language of an iterable of string values
 # an example of this can be a list of names

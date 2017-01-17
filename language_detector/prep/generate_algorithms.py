@@ -54,7 +54,7 @@ for language in languages:
 all_char_score = sorted(all_char_score, key = lambda cs: -1*cs[1])
 
 for char, score, language in all_char_score:
-    text_to_write += "\n" + char.encode("utf-8").strip() + "\t" + language
+    text_to_write += "\n" + char.encode("utf-8").strip() + "\t" + language + "\t" + str(score)
 
 with open(directory + "/char_language.txt", "wb") as f:
     f.write(text_to_write.strip())
