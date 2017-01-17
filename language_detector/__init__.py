@@ -37,20 +37,24 @@ def detect_language_text(text):
     for char, language, score in char_language:
         if char in text:
             #print "MATCHED", [char]
-            #return language
             counts[language] += score
-    #print "counts:", counts
     # basically return whichever language has most amount of special letters in there
-    return counts.most_common(1)[0][0]
+    results = counts.most_common(1) 
+    if results:
+        return results[0][0]
 
 # just returns the most common language of an iterable of string values
 # an example of this can be a list of names
 def detect_language_iterable(iterable):
     # may be able to speed this up with out using counter
     # hmmm nvm.. it's so freaking quick anyway, that probably don't worry about this now
-    counter = Counter([detect_language(iteration) for iteration in iterable])
-    most_common_language = counter.most_common(1)[0][0] or counter.most_common(2)[1][0]
-    return most_common_language
+    most_common = Counter([detect_language(iteration) for iteration in iterable]).most_common(2)
+    if most_common[0][0]:
+        return most_common[0][0]
+    elif len(most_common) == 2:
+        # know that not returning 1st one
+        return most_common[1][0]
+    # will return None if doesn't match any above
 
 def detect_language(inpt, return_as_code=False):
     if isinstance(inpt, str) or isinstance(inpt, unicode):

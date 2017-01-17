@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DanielJDufour/language-detector.svg?branch=master)](https://travis-ci.org/DanielJDufour/language-detector)
+
 # language-detector
 language-detector detects the language of text
 
@@ -35,7 +37,7 @@ python -m unittest language_detector.tests.test
 # Comparison
 | package | language-detector | langid |
 | -------------------------------- |
-| test-duration | 0.08 | 2.51 |
+| test-duration (seconds) | 0.08 | 2.51 |
 | accuracy | 93.55% | 67.74% |
 
 # Excluding Languages

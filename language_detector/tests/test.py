@@ -60,5 +60,10 @@ class TestStringMethods(unittest.TestCase):
         text = "Bla bla bla I'm not sure where to start."
         self.assertEqual(dl(text, return_as_code=True), "en")
 
+    def test_iterable(self):
+        iterable = [u'01', u'03', u'04', u'07', u'08', u'10', u'12', u'13', u'16', u'15', u'18', u'11', u'17', u'09', u'06', u'02', u'05', u'14']
+        language = detect_language_iterable(iterable)
+        self.assertEqual(language, None)
+
 if __name__ == '__main__':
     unittest.main()
