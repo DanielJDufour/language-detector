@@ -61,10 +61,11 @@ def detect_language(inpt, return_as_code=False):
         language = detect_language_text(inpt)
     elif isinstance(inpt, set) or isinstance(inpt, list):
         language = detect_language_iterable(inpt)
-    if return_as_code:
-        return language_to_code[language]
-    else:
-        return language
+    if language:
+        if return_as_code:
+            return language_to_code.get(language, None)
+        else:
+            return language
 
 
 def isArabic(inpt):

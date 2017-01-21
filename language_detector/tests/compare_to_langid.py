@@ -6,7 +6,7 @@ from timeit import timeit
 
 directory_of_this_file = dirname(realpath(__file__))
 directory_of_sources = directory_of_this_file[:-6] + "/prep/sources"
- 
+""" 
 print timeit('''
     from language_detector import detect_language
     from os import listdir
@@ -26,6 +26,7 @@ print timeit('''
                     #print "ERROR: ", detected_language, " should be ", language
                     errors += 1
     print "accuracy for language_detector:", (1 - (float(errors) / number_of_files)) * 100, "%"
+    print "number_of_files:", number_of_files
 
 ''', number = 10)
 
@@ -61,3 +62,30 @@ print timeit('''
     print "accuracy for langid:", (1 - (float(errors) / number_of_files)) * 100, "%"
 
 ''', number = 10)
+"""
+
+
+print timeit('''
+    from language_detector import detect_language
+    from os import listdir
+    directory_of_sources = "''' + directory_of_sources + '''"
+    languages = ["Arabic"]
+    number_of_files = 0
+    errors = 0
+    for language in languages:
+        directory_of_language_files = directory_of_sources + "/" + language
+        for filename in listdir(directory_of_language_files):
+            filepath = directory_of_language_files + "/" + filename 
+            with open(filepath) as f:
+                text = f.read().decode("utf-8")
+                number_of_files += 1
+                detected_language = detect_language(text)
+                if detected_language != language:
+                    #print "ERROR: ", detected_language, " should be ", language
+                    errors += 1
+    print "accuracy for language_detector:", (1 - (float(errors) / number_of_files)) * 100, "%"
+    print "number_of_files:", number_of_files
+
+''', number = 10)
+
+

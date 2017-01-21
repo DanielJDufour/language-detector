@@ -65,5 +65,8 @@ class TestStringMethods(unittest.TestCase):
         language = detect_language_iterable(iterable)
         self.assertEqual(language, None)
 
+    def test_return_as_code(self):
+        self.assertEqual(detect_language("", return_as_code=True), None)
+
 if __name__ == '__main__':
     unittest.main()
