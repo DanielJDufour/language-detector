@@ -63,7 +63,10 @@ def detect_language(inpt, return_as_code=False):
         language = detect_language_iterable(inpt)
     if language:
         if return_as_code:
-            return language_to_code.get(language, None)
+            if language in language_to_code:
+                return language_to_code.get[language]
+            else:
+                return language
         else:
             return language
 
