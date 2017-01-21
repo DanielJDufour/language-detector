@@ -64,7 +64,7 @@ def detect_language(inpt, return_as_code=False):
     if language:
         if return_as_code:
             if language in language_to_code:
-                return language_to_code.get[language]
+                return language_to_code[language]
             else:
                 return language
         else:
