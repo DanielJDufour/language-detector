@@ -1,3 +1,6 @@
+from sys import version_info
+python_version = version_info.major
+
 from os.path import dirname, realpath
 from collections import Counter
 
@@ -24,12 +27,15 @@ char_language = []
 with open(directory + "/prep/char_language.txt") as f:
     for line in f:
         if line:
-            char, language, score = line.decode("utf-8").strip().split(u"\t")
+            if python_version == 2:
+                char, language, score = line.decode("utf-8").strip().split(u"\t")
+            elif python_version == 3:
+                char, language, score = line.strip().split(u"\t")
             score = float(score)
             char_language.append((char, language, score))
 
 def detect_language_text(text):
-    if isinstance(text, str):
+    if python_version == 2 and isinstance(text, str):
         text = text.decode("utf-8")
 
     # could make this more sophisticated with using TFIDF scores probably
@@ -57,7 +63,7 @@ def detect_language_iterable(iterable):
     # will return None if doesn't match any above
 
 def detect_language(inpt, return_as_code=False):
-    if isinstance(inpt, str) or isinstance(inpt, unicode):
+    if isinstance(inpt, str) or (isinstance(inpt, unicode) if python_version == 2 else isinstance(inpt, bytes)):
         language = detect_language_text(inpt)
     elif isinstance(inpt, set) or isinstance(inpt, list):
         language = detect_language_iterable(inpt)

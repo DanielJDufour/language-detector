@@ -8,6 +8,9 @@ language-detector detects the language of text
 pip install language-detector
 ```
 
+# Python Version
+Works with both Python 2 and 3
+
 # Use
 ```
 from language_detector import detect_language
