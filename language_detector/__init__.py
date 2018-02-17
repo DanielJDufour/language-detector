@@ -24,15 +24,21 @@ language_to_code = {
 
 
 char_language = []
-with open(directory + "/prep/char_language.txt") as f:
-    for line in f:
-        if line:
-            if python_version == 2:
-                char, language, score = line.decode("utf-8").strip().split(u"\t")
-            elif python_version == 3:
-                char, language, score = line.strip().split(u"\t")
-            score = float(score)
-            char_language.append((char, language, score))
+if python_version == 2:
+    char_language_file = open(directory + "/prep/char_language.txt")
+elif python_version == 3:
+    char_language_file = open(directory + "/prep/char_language.txt", encoding='utf-8')
+
+for line in char_language_file:
+    if line:
+        if python_version == 2:
+            char, language, score = line.decode("utf-8").strip().split(u"\t")
+        elif python_version == 3:
+            char, language, score = line.strip().split(u"\t")
+        score = float(score)
+        char_language.append((char, language, score))
+
+char_language_file.close()
 
 def detect_language_text(text):
     if python_version == 2 and isinstance(text, str):
