@@ -52,3 +52,6 @@ language_detector.char_language = [cl for cl in char_language if cl[1] != "Engli
 
 # proceed as normal
 ``` 
+
+# Support
+Contact the package author, Daniel J. Dufour, at daniel.j.dufour@gmail.com
