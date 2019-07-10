@@ -53,5 +53,8 @@ language_detector.char_language = [cl for cl in char_language if cl[1] != "Engli
 # proceed as normal
 ``` 
 
+# Contributing
+If you'd like to contribute a new language, please consult [CONTRIBUTING.md](CONTRIBUTING.md)
+
 # Support
 Contact the package author, Daniel J. Dufour, at daniel.j.dufour@gmail.com
