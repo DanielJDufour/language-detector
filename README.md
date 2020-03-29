@@ -27,6 +27,7 @@ language = detect_language(text)
 | Farsi |
 | French |
 | German |
+| Khmer |
 | Kurmanci (Kurdish) |
 | Mandarin |
 | Russian |
@@ -68,6 +69,7 @@ The following is a list of datasets used for each language:
 | Farsi | [BBC News Persian](https://www.bbc.com/persian) |
 | French | [UN Corpora](http://www.uncorpora.org/) |
 | German | [Deutsche Welle](https://www.dw.com/de) |
+| Khmer | [Cambodia Daily](https://www.cambodiadaily.com) |
 | Kurmanci (Kurdish) | [Rudaw](https://rudaw.net/kurmanci) |
 | Mandarin | [UN Corpora](http://www.uncorpora.org/) |
 | Russian | [UN Corpora](http://www.uncorpora.org/) |

@@ -38,6 +38,11 @@ class TestStringMethods(unittest.TestCase):
         """
         self.assertEqual(dl(text), "German")
 
+
+    def test_khmer(self):
+        text = """ក្រ​សួង​សុខា​ភិ​បាល​ព្រ​មាន​ចាត់​វិធាន​ការ​ ចំ​ពោះ​អ្នក​​ដែល​ផ្សព្វផ្សាយ ​​ឧប​ករណ៍​​​ធ្វើ​តេស្ត​រហ័ស​រក​ជំងឺ​កូវីដ​ ១៩"""
+        self.assertEqual(dl(text), "Khmer")
+
     def test_kurmanci(self):
         text = """
         Luv xelata xwe pêşkêşî 55 milyon kurd û pêşmergeyan kir Zêdetir

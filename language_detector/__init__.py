@@ -11,6 +11,7 @@ language_to_code = {
 "English": "en",
 "French": "fr",
 "German": "de",
+"Khmer": "km",
 "Kurdish": "ku",
 "Kurmanci": "ku-ku",
 "Italian": "it",
