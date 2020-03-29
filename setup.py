@@ -1,9 +1,12 @@
-import setuptools
+from setuptools import setup
+from os.path import abspath, dirname, join
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+root_dir = abspath(dirname(__file__))
 
-setuptools.setup(
+with open(join(root_dir, "README.md")) as f:
+    long_description = f.read()
+
+setup(
     name = 'language-detector',
     packages = ['language_detector'],
     package_dir = {'language_detector': 'language_detector'},
@@ -16,12 +19,12 @@ setuptools.setup(
     author_email = 'daniel.j.dufour@gmail.com',
     url = 'https://github.com/DanielJDufour/language-detector',
     download_url = 'https://github.com/DanielJDufour/language-detector/tarball/download',
-    keywords = ['arabic','farsi','french','kurdish','kurmanci','language','python','sorani','spanish','tagging','turkish'],
+    keywords = ['arabic','farsi','french','kurdish','kurmanci','language','nlp','python','sorani','spanish','tagging','turkish'],
     classifiers = [
         'Development Status :: 5 - Production/Stable',
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
-    ],
+    ]
 )
