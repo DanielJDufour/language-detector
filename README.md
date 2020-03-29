@@ -41,7 +41,7 @@ python -m unittest language_detector.tests.test
 ```
 
 # Comparison
-Test is a comparison of how well language-detector and langid identify languages in the [data sources](language_detector/prep/sources).
+Test is a comparison of how well language-detector and langid identify languages in the [data sources](language_detector/prep/sources).  
 | package | language-detector | langid |
 | ------- | ----------------- | ------ |
 | test-duration (in seconds)| 0.10 | 3.83 |
@@ -58,9 +58,9 @@ language_detector.char_language = [cl for cl in char_language if cl[1] != "Engli
 ``` 
 
 # Datasets
-The following is a list of datasets used for each language:
+The following is a list of datasets used for each language:  
 | Language | Datasets |
-| ------------------- | -- |
+| ------------------- | -------------------------- |
 | Arabic | [UN Corpora](http://www.uncorpora.org/) |
 | English |  [UN Corpora](http://www.uncorpora.org/) |
 | Farsi | [BBC News Persian](https://www.bbc.com/persian) | 
