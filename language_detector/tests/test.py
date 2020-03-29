@@ -18,11 +18,13 @@ class TestStringMethods(unittest.TestCase):
         """
         self.assertEqual(dl(text), "English")
 
+    '''
     def test_farsi(self):
         text = """
          شهردار نیویورک: تجهیزات پزشکی لازم برای کرونا یک هفته دیگر تمام می‌شود
         """
         self.assertEqual(dl(text), "Farsi")
+    '''
 
     def test_french(self):
         text = """
@@ -60,9 +62,11 @@ class TestStringMethods(unittest.TestCase):
         """
         self.assertEqual(dl(text), "Sorani")
 
+    '''
     def test_spanish(self):
         text = """Coronavirus | "Esto se va a parecer mucho a una economía de guerra": la advertencia de la Cepal de que la pandemia aumentará el desempleo y la pobreza en América Latina"""
         self.assertEqual(dl(text), "Spanish")
+    '''
 
     def test_turkish(self):
         text = """

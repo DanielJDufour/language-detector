@@ -41,7 +41,8 @@ python -m unittest language_detector.tests.test
 ```
 
 # Comparison
-Test is a comparison of how well language-detector and langid identify languages in the [data sources](language_detector/prep/sources).  
+Test is a comparison of how well language-detector and langid identify languages in the [data sources](language_detector/prep/sources). 
+ 
 | package | language-detector | langid |
 | ------- | ----------------- | ------ |
 | test-duration (in seconds)| 0.10 | 3.83 |
@@ -59,11 +60,12 @@ language_detector.char_language = [cl for cl in char_language if cl[1] != "Engli
 
 # Datasets
 The following is a list of datasets used for each language:  
+
 | Language | Datasets |
 | ------------------- | -------------------------- |
 | Arabic | [UN Corpora](http://www.uncorpora.org/) |
 | English |  [UN Corpora](http://www.uncorpora.org/) |
-| Farsi | [BBC News Persian](https://www.bbc.com/persian) | 
+| Farsi | [BBC News Persian](https://www.bbc.com/persian) |
 | French | [UN Corpora](http://www.uncorpora.org/) |
 | German | [Deutsche Welle](https://www.dw.com/de) |
 | Kurmanci (Kurdish) | [Rudaw](https://rudaw.net/kurmanci) |
@@ -71,7 +73,7 @@ The following is a list of datasets used for each language:
 | Russian | [UN Corpora](http://www.uncorpora.org/) |
 | Sorani (Kurdish) | [Rudaw](https://www.rudaw.net/sorani) |
 | Spanish | [UN Corpora](http://www.uncorpora.org/) |
-| Turkish | [BBC News Türkçe](https://www.bbc.com/turkce) | 
+| Turkish | [BBC News Türkçe](https://www.bbc.com/turkce) |
 
 # Contributing
 If you'd like to contribute a new language, please consult [CONTRIBUTING.md](CONTRIBUTING.md)
