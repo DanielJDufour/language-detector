@@ -77,6 +77,10 @@ The following is a list of datasets used for each language:
 | Spanish | [UN Corpora](http://www.uncorpora.org/) |
 | Turkish | [BBC News Türkçe](https://www.bbc.com/turkce) |
 
+# How Does It Work?
+When training the model, we scan all the data sources and compute the frequency of how often a character appears in each specific language.  We also compute the frequency of how often a characters appears in all of the data sources for all the languages.  For each language, we then calculate a score for each character as `frequency_in_language / frequency_in_all_languages`.  We then save the top ten highest scoring characters for each language.  
+When detecting a language, we simply iterate through the saved characters (ten for each language), and add their score as a weighted-vote for each language.  Whichever, language has the highest score is selected as the winner.
+
 # Contributing
 If you'd like to contribute a new language, please consult [CONTRIBUTING.md](CONTRIBUTING.md)
 
